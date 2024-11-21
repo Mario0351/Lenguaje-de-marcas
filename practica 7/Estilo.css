@@ -1,0 +1,53 @@
+/* Fuente para todos los elementos */
+* {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Primer párrafo con fondo gris */
+#primer-parrafo {
+    background-color: grey;
+}
+
+/* Encabezado h1 especial con clase "especial" en azul */
+h1.especial {
+    color: blue;
+}
+
+/* Bordes sólidos de 1px de color naranja para h2 y h3 */
+h2, h3 {
+    border: 1px solid orange;
+}
+
+/* Elementos del primer nivel de listas en rojo */
+ul > li {
+    color: red;
+}
+
+/* Elementos del segundo nivel de listas en verde */
+ul ul > li {
+    color: green;
+}
+
+/* Imágenes hijas directas de un párrafo con borde sólido negro */
+p > img {
+    border: 5px solid black;
+    height: 35px;
+    width: 115px;
+}
+
+/* Imágenes con descripción alternativa "segunda" con borde sólido rojo */
+img[alt="segunda"] {
+    border: 5px solid red;
+    height: 35px;
+    width: 115px;
+}
+
+/* h3 justo antes de un párrafo con fondo rosa */
+h3 {
+    background-color: pink;
+}
+
+/* h3 justo después de un párrafo con fondo azul */
+p + h3 {
+    background-color: blue;
+}
