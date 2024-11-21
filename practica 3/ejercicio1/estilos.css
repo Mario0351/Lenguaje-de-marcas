@@ -1,0 +1,49 @@
+/* Establece la familia de fuentes para todo el documento */
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilos para el encabezado h1 */
+header h1 {
+    text-align: left;
+    font-size: 20px; /* Tamaño según la tabla */
+    color: #333; /* Color según la tabla */
+    margin-top: 20px;
+}
+
+/* Estilos para las cabeceras h2 */
+section h2 {
+    font-size: 16px; /* Tamaño según la tabla */
+    color: #666; /* Color según la tabla */
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor de imagen y texto */
+.contenido {
+    overflow: hidden;
+}
+
+/* Imagen alineada a la izquierda */
+.contenido img {
+    float: left;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 16px; /* Tamaño según la tabla */
+    color: #000; /* Color negro según la tabla */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: blue; /* Color azul según la tabla */
+    font-size: 16px; /* Tamaño según la tabla */
+}
+
+/* Estilos para la tabla */
+
+
+

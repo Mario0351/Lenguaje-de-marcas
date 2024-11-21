@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCICIO 2</title>
+</head>
+<body>
+    <img id="imagen" src="https://www.dhresource.com/webp/m/0x0/f2/albu/g22/M01/03/97/rBVaEmKkIVyADveKAALfl4VSlRo954.jpg" width="300" height="300"><br>
+
+    <button onclick="cambiarTamanoImagen()">Cambiar tamaño de la imagen</button>
+    <button onclick="cambiarImagen()">Cambiar imagen</button>
+
+    <script>
+        function cambiarTamanoImagen() {
+            const imagen = document.getElementById("imagen");
+            imagen.width = 500; 
+            imagen.height = 500; 
+        }
+
+        function cambiarImagen() {
+            const imagen = document.getElementById("imagen");
+            imagen.src = "https://bmw.europe-moto.com/img/cms/P90479740_lowRes_the-new-bmw-s-1000-r%20(1).jpg".style.display = "block";
+        }
+    </script>
+</body>
+</html>

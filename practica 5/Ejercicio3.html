@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCICIO 3</title>
+    <style>
+        .contenedor {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+
+        #contenedor2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor1" class="contenedor">
+        <h2>Primer Contenedor</h2>
+        <p>Estas en el primer contenedor</p>
+        <button onclick="mostrarContenedor2()">Ir al Segundo Contenedor</button>
+    </div>
+
+    <div id="contenedor2" class="contenedor">
+        <h2>Segundo Contenedor</h2>
+        <p>Estas en el segundo contenedor</p>
+        <button onclick="mostrarContenedor1()">Ir al Primer Contenedor</button>
+    </div>
+
+    <script>
+        function mostrarContenedor2() {
+            document.getElementById("contenedor1").style.display = "none";
+            document.getElementById("contenedor2").style.display = "block";
+        }
+
+        function mostrarContenedor1() {
+            document.getElementById("contenedor2").style.display = "none";
+            document.getElementById("contenedor1").style.display = "block";
+        }
+    </script>
+</body>
+</html>

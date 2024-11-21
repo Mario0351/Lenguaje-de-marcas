@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Incidencia - C.P.I.F.P. Alan Turing</title>
+    <link rel="stylesheet" href="Estilo1.css">
+</head>
+<body>
+
+    <div class="logo">
+        <img src="c:\Users\Mario\Documents\recursos\ejercicio1\IAT-LOGOTIPO.jpg" alt="Logo del centro" width="300" height="110">
+    </div>
+
+    <form action="procesarincidencia.php" method="POST" enctype="multipart/form-data" class="formulario">
+        <fieldset>
+            <legend>Nueva incidencia</legend>
+
+            <label for="profesor">Profesor:</label>
+            <input type="text" id="profesor" name="profesor" required><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" name="departamento" required><br>
+
+            <label for="aula">Aula (número):</label>
+            <input type="number" id="aula" name="aula" required><br>
+
+            <label for="dia">Día de la incidencia:</label>
+            <input type="date" id="dia" name="dia" required><br>
+
+            <label for="hora">Hora de la incidencia:</label>
+            <input type="time" id="hora" name="hora" required><br>
+
+            <label for="descripcion">Descripción de la incidencia:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+
+            <label for="imagen">Subir imagen (opcional):</label>
+            <input type="file" id="imagen" name="imagen"><br>
+
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <h3>Síguenos en nuestras redes sociales:</h3>
+        <div class="redes-sociales">
+            <a href="https://facebook.com/centro" target="_blank">
+                <img src="c:\Users\Mario\Documents\recursos\ejercicio1\icons8-facebook-48.png" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://twitter.com/centro" target="_blank">
+                <img src="c:\Users\Mario\Documents\recursos\ejercicio1\icons8-instagram-48.png" alt="Twitter" width="48" height="48">
+            </a>
+            <a href="https://instagram.com/centro" target="_blank">
+                <img src="c:\Users\Mario\Documents\recursos\ejercicio1\icons8-twitter-48.png" alt="Instagram" width="48" height="48">
+            </a>
+            <a href="https://youtube.com/centro" target="_blank">
+                <img src="c:\Users\Mario\Documents\recursos\ejercicio1\icons8-youtube-48.png" alt="YouTube" width="48" height="48">
+            </a>
+            <a href="https://www.centro.com" target="_blank">
+                <img src="c:\Users\Mario\Documents\recursos\ejercicio1\icons8-website-48.png" alt="Website" width="48" height="48">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

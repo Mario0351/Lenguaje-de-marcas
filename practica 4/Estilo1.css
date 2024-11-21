@@ -1,0 +1,88 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo centrado */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario */
+.formulario {
+    background-color: #f4f1ed;
+    color: firebrick;
+    border: 2px solid darkgoldenrod;
+    border-radius: 7px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.formulario legend {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botones button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: navy;
+}
+
+footer {
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #f7c600;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redes-sociales img {
+    width: 48px;
+    height: 48px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCICIO 4</title>
+    <link rel="stylesheet" href="Estilo4.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora</h2>
+        
+        <label for="op1">Operando 1:</label>
+        <input type="number" id="op1" placeholder="Introduce el primer número">
+        
+        <label for="op2">Operando 2:</label>
+        <input type="number" id="op2" placeholder="Introduce el segundo número">
+        
+        <label for="operator">Operador:</label>
+        <select id="operator">
+            <option value="add">Suma</option>
+            <option value="subtract">Resta</option>
+            <option value="multiply">Multiplicación</option>
+            <option value="divide">División</option>
+        </select>
+        
+        <button onclick="calculate()">Calcular</button>
+        
+        <label for="result">Resultado:</label>
+        <input type="text" id="result" readonly class="result">
+    </div>
+
+    <script>
+        function calculate() {
+            const op1 = parseFloat(document.getElementById('op1').value);
+            const op2 = parseFloat(document.getElementById('op2').value);
+            const operator = document.getElementById('operator').value;
+            let result;
+
+            if (isNaN(op1) || isNaN(op2)) {
+                result = "Introduce números válidos";
+            } else {
+                switch (operator) {
+                    case 'add':
+                        result = op1 + op2;
+                        break;
+                    case 'subtract':
+                        result = op1 - op2;
+                        break;
+                    case 'multiply':
+                        result = op1 * op2;
+                        break;
+                    case 'divide':
+                        result = op2 !== 0 ? op1 / op2 : "División por cero";
+                        break;
+                    default:
+                        result = "Operación no válida";
+                }
+            }
+
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

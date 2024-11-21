@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCICIO 1</title>
+</head>
+<body>
+    <h1 id="titulo">Este es el título</h1>
+    <p id="parrafo">Este es un párrafo de ejemplo.</p>
+
+    <button onclick="cambiarColorTitulo()">Poner título en rojo</button>
+    <button onclick="ponerNegritaParrafo()">Poner párrafo en negrita</button>
+
+    <script>
+        function cambiarColorTitulo() {
+            document.getElementById("titulo").style.color = "red";
+        }
+
+        function ponerNegritaParrafo() {
+            document.getElementById("parrafo").style.fontWeight = "bold";
+        }
+    </script>
+</body>
+</html>
