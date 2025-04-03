@@ -17,7 +17,8 @@
     <div class="container">
         <img id="profileImage" src="https://img.a.transfermarkt.technology/portrait/big/69751-1710080407.jpg?lm=1" alt="Foto de perfil">
         <h1 id = "fullName">Mario Mancebo Romero</h1>
-        <button id="ChangeNameColor">boton</button>
+        <button id="ChangeNameColor">Cambiar Color</button>
+        <button id="Ocultar">Ocultar Nombre</button>
         <p>Estudiante</p>
         <h2>Hobby</h2>
         <ul>
@@ -34,10 +35,21 @@
             <li><a href="#">Linkedin</a></li>
             <li><a href="#">Gmail</a></li>
         </ul>
-
+        
         <h2>Contacto</h2>
-        <input type="text" placeholder="Ingrese su nombre">
-        <input type="email" placeholder="Ingrese su email">
+        <button id="toggleButton">Contacto</button>
+        <div id="contactForm" class="contact-form">
+            <label>Nombre Completo</label>
+            <input type="text" id="name" name="name" required>
+            <label>Telefono</label>
+            <input type="number" id="telefono" name="telefono">
+            <label>Email</label>
+            <input type="email" id="email" name="email">
+            <label>Mensaje</label>
+            <input type="message" id="mensaje">
+        </div>
+
+        
         <button>Enviar</button>
     </div>
     <script src="script.js"></script>

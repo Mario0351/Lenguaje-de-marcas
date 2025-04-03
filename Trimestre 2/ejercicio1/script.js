@@ -10,7 +10,8 @@ profileImage.addEventListener('mouseout', () => {
 })
 
 var ChangeNameColorButton = document.getElementById('ChangeNameColor');
-var fullNameH1 = document.getElementById('fullName');
+// var fullNameH1 = document.getElementById('fullName');
+const titleName = document.getElementById('fullName');
 
 // ChangeNameColorButton.addEventListener('click', function() {
 //     console.warn("click........");
@@ -20,13 +21,39 @@ var fullNameH1 = document.getElementById('fullName');
 // });
 
 ChangeNameColorButton.addEventListener('click', () => {
-    const titleName = document.getElementById('fullName');
+    
     const colorName = titleName.style.color;
     debugger;
 
     if (titleName.style.color == '') {
         titleName.style.color = 'blue';
+        titleName.textContent = "1º DAW"
     }else{
         titleName.style.color = '';
+        titleName.textContent = 'Mario Mancebo Romero'
     }
-})
+});
+
+
+const OcultarNombre = document.getElementById('Ocultar');
+
+OcultarNombre.addEventListener('clic', () => {
+    debugger;
+
+    if (titleName.style.display === "Mario Mancebo Romero") {
+        titleName.style.display = "none";
+    }else{
+        titleName.style.display = "Mario Mancebo Romero";
+    }
+});
+
+document.getElementById("toggleButton").addEventListener("click", function() {
+    var form = document.getElementById("contactForm");
+    if (form.style.display === "none" || form.style.display === "") {
+        form.style.display = "block";
+        this.textContent = "Ocultar";
+    } else {
+        form.style.display = "none";
+        this.textContent = "Contacto";
+    }
+});
