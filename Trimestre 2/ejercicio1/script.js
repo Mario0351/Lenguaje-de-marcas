@@ -12,16 +12,21 @@ profileImage.addEventListener('mouseout', () => {
 var ChangeNameColorButton = document.getElementById('ChangeNameColor');
 var fullNameH1 = document.getElementById('fullName');
 
-ChangeNameColorButton.addEventListener('click', function() {
-    console.warn("click........");
-    alert("Ahora el nombre va a cambiar de color");
-    fullNameH1.style = "color: red; font-style: italic;";
-});
+// ChangeNameColorButton.addEventListener('click', function() {
+//     console.warn("click........");
+//     alert("Ahora el nombre va a cambiar de color");
+//     fullNameH1.style = "color: red; font-style: italic;";
+    
+// });
 
-//nameColorButton.addEventListener('click', () => {
-//     const titleName = document.getElementById('fullname');
-//     if (titleName.style.color == '') {
-//         titleName.style.color = 'blue';
-//     }else{
-//         titleName.style.color = '';
-//     }
+ChangeNameColorButton.addEventListener('click', () => {
+    const titleName = document.getElementById('fullName');
+    const colorName = titleName.style.color;
+    debugger;
+
+    if (titleName.style.color == '') {
+        titleName.style.color = 'blue';
+    }else{
+        titleName.style.color = '';
+    }
+})
