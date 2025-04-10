@@ -27,22 +27,46 @@
 
 <body>
 
-  <h1>First Javascript contact</h1>
-  <p>This is the initial text.</p>
+  <h1>First JavaScript Contact</h1>
+  <p id="text">This is the initial text.</p>
 
-  <button>Hello World</button>
-  <button>Goodbye World</button>
-  <button>Bold</button>
-  <button>Italic</button>
-  <button>Change Color</button>
+  <button id="helloBtn">Hello World</button>
+  <button id="goodbyeBtn">Goodbye World</button>
+  <button id="boldBtn">Bold</button>
+  <button id="italicBtn">Italic</button>
+  <button id="colorBtn">Change Color</button>
 
   <script>
-      // A button that, when clicked, changes the text of the paragraph <p> to "Hello World".
-      // A button that, when clicked, changes the text of the paragraph < p > to "Goodbye World".
-      // A button that, when clicked, change the text style to bold.
-      // A button that, when clicked, change the text style to italic.
-      // A button that, when clicked, change the color of the text to red, when it is clicked again set the color back to the initial color.
+    const text = document.getElementById("text");
 
+    const helloBtn = document.getElementById("helloBtn");
+    const goodbyeBtn = document.getElementById("goodbyeBtn");
+    const boldBtn = document.getElementById("boldBtn");
+    const italicBtn = document.getElementById("italicBtn");
+    const colorBtn = document.getElementById("colorBtn");
+
+    let isRed = false;
+
+    helloBtn.addEventListener("click", () => {
+      text.textContent = "Hello World";
+    });
+
+    goodbyeBtn.addEventListener("click", () => {
+      text.textContent = "Goodbye World";
+    });
+
+    boldBtn.addEventListener("click", () => {
+      text.style.fontWeight = text.style.fontWeight === "bold" ? "normal" : "bold";
+    });
+
+    italicBtn.addEventListener("click", () => {
+      text.style.fontStyle = text.style.fontStyle === "italic" ? "normal" : "italic";
+    });
+
+    colorBtn.addEventListener("click", () => {
+      isRed = !isRed;
+      text.style.color = isRed ? "red" : "black";
+    });
   </script>
 
 </body>
