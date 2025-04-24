@@ -1,0 +1,21 @@
+[
+    {
+        "name" : "DAW",
+        "level" : "superior",
+        "modulos" : [{
+            "name" : "LGMI"
+        }]
+    },
+    {
+        "name" : "DAM",
+        "level" : "superior"
+    },
+    {
+        "name" : "ASIR",
+        "level" : "superior"
+    },
+    {
+        "name" : "SMR",
+        "level" : "medio"
+    }
+]

@@ -57,3 +57,41 @@ document.getElementById("toggleButton").addEventListener("click", function() {
         this.textContent = "Contacto";
     }
 });
+
+let fps = ["Deporte", "Musica", "Fotos"];
+
+let orderListEl = document.getElementById("order_list");
+for(var i = 0; i<fps.length; i++){
+    let li = document.createElement("li");
+    li.innerText = fps[i];
+    orderListEl.appendChild(li);
+}
+
+fps.forEach(item => {
+    let li = document.createElement("li");
+    li.innerText = fps[i];
+    orderListEl.appendChild(li);
+})
+
+let objects = [
+    {
+        "name" : "DAW",
+        "level" : "superior",
+        "modulos" : [{
+            "name" : "LGMI"
+        }]
+    },
+    {
+        "name" : "DAM",
+        "level" : "superior"
+    },
+    {
+        "name" : "ASIR",
+        "level" : "superior"
+    },
+    {
+        "name" : "SMR",
+        "level" : "medio"
+    }
+]
+    
