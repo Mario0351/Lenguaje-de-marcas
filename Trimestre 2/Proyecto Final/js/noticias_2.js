@@ -1,0 +1,71 @@
+var noticias = {
+    "totalArticles": 769,
+    "articles": [
+      {
+        "title": "Una mujer pide a ChatGPT que le lea la mano y la IA detecta un posible cáncer de piel",
+        "description": "ChatGPT le detectó un tipo de melanoma que aparece en zonas como las palmas o las plantas de los pies, donde puede pasar desapercibido.",
+        "content": "ChatGPT es capaz de hacer mucho más que responder preguntas...",
+        "url": "https://www.20minutos.es/tecnologia/inteligencia-artificial/mujer-pide-chatgpt-le-lea-mano-ia-detecta-posible-cancer-piel-5706592/",
+        "image": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2025/05/05/chatgpt-cancer-tiktok.png",
+        "publishedAt": "2025-05-08T05:00:00Z",
+        "source": {
+          "name": "20 Minutos",
+          "url": "https://www.20minutos.es"
+        }
+      },
+      {
+        "title": "Le preguntamos a ChatGPT por el mejor director para la película perfecta sobre el cónclave... y hay fumata blanca",
+        "description": "Nos asomamos al siempre dispuesto oráculo digital...",
+        "content": "El tema candente de la semana lo inunda todo...",
+        "url": "https://www.20minutos.es/cinemania/noticias/chatgpt-director-actor-pelicula-perfecta-conclave-fumata-blanca-5707346/",
+        "image": "https://imagenes.20minutos.es/files/image_1920_1080/files/redes_cinemania/uploads/imagenes/2025/05/06/inizia-il-conclave-per-elezione-nuovo-papa-2.jpeg",
+        "publishedAt": "2025-05-08T02:47:34Z",
+        "source": {
+          "name": "20 Minutos",
+          "url": "https://www.20minutos.es"
+        }
+      },
+      {
+        "title": "Google se adelanta a ChatGPT con su asistente de voz: Gemini Live ya puede usar tus apps por ti",
+        "description": "Gemini Live, el chatbot de voz de Gemini...",
+        "content": "Gemini, la IA de Google, se está acercando cada vez más...",
+        "url": "https://www.20minutos.es/tecnologia/inteligencia-artificial/google-se-adelanta-chatgpt-asistente-voz-gemini-live-ya-puede-usar-tus-apps-por-ti-5707280/",
+        "image": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2025/05/07/open-ai-google.png",
+        "publishedAt": "2025-05-07T12:10:26Z",
+        "source": {
+          "name": "20 Minutos",
+          "url": "https://www.20minutos.es"
+        }
+      },
+      {
+        "title": "Quién será el nuevo Papa tras el cónclave, según la inteligencia artificial",
+        "description": "ChatGPT, la inteligencia artificial de OpenAI...",
+        "content": "El Vaticano se prepara para el inicio del cónclave...",
+        "url": "https://www.20minutos.es/tecnologia/inteligencia-artificial/quien-sera-nuevo-papa-tras-conclave-segun-chatgpt-ia-5702686/",
+        "image": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2025/05/05/estos-son-los-favoritos-para-nuevo-papa.jpeg",
+        "publishedAt": "2025-05-07T06:02:57Z",
+        "source": {
+          "name": "20 Minutos",
+          "url": "https://www.20minutos.es"
+        }
+      },
+      {
+        "title": "Le preguntamos a la IA cuáles son las playas de España más bonitas y menos masificadas para este 2025",
+        "description": "ChatGPT ha destacado los arenales más impresionantes...",
+        "content": "La temporada estival se está acercando...",
+        "url": "https://www.20minutos.es/viajes/destinos/preguntamos-ia-cuales-playas-espana-mas-bonitas-menos-masificadas-2025-5704577/",
+        "image": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2022/06/15/istock-1299634453.jpeg",
+        "publishedAt": "2025-05-07T05:00:00Z",
+        "source": {
+          "name": "20 Minutos",
+          "url": "https://www.20minutos.es"
+        }
+      }
+    ]
+  };
+
+    var contenedor = document.getElementById('contenedor-noticias');
+
+    noticias.articles.forEach(noticia => {
+        
+    });
