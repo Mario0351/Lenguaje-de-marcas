@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acerca de - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clima.html">Clima</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="acerca.html">Acerca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="form-check form-switch ms-auto me-3">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+            <label class="form-check-label text-light" for="darkModeSwitch">Modo Oscuro</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center">Acerca de este Proyecto</h1>
+        <div class="card p-4">
+            <h3>Descripción General</h3>
+            <p>Este proyecto es un Dashboard informativo que integra datos de clima y noticias. Ha sido desarrollado como proyecto final para el módulo de "Lenguaje de Marcas y Sistemas de gestión de la información".</p>
+            
+            <h3>Objetivos del Desarrollo</h3>
+            <ul>
+                <li>Aplicar estructuras HTML semánticas y diseño responsive con CSS (usando Bootstrap).</li>
+                <li>Manipular el DOM y gestionar eventos con JavaScript.</li>
+                <li>Integrar información dinámica desde fuentes de datos (en este caso, archivos JSON locales simulando APIs).</li>
+                <li>Organizar el proyecto en múltiples páginas HTML interconectadas.</li>
+                <li>Documentar el proceso de desarrollo y presentar el proyecto de manera clara.</li>
+            </ul>
+
+            <h3>Fuentes de Datos (JSON Locales)</h3>
+            <p>Para este proyecto, se han utilizado archivos JSON locales para simular la respuesta de APIs públicas de clima y noticias. Esto permite trabajar con datos dinámicos sin necesidad de keys de API o de conexión a internet para la demostración.</p>
+            <ul>
+                <li><strong>Datos de Clima:</strong> `clima.js` (simulando WeatherAPI).</li>
+                <li><strong>Datos de Noticias:</strong> `noticias.js` (simulando GNews API).</li>
+            </ul>
+
+            <h3>Tecnologías Empleadas</h3>
+            <ul>
+                <li><strong>HTML:</strong> Para la estructura semántica de las páginas web.</li>
+                <li><strong>CSS:</strong> Para el diseño y la responsividad, utilizando en gran medida la librería Bootstrap 5.</li>
+                <li><strong>JavaScript:</strong> Para la interactividad, la manipulación del DOM y la carga/procesamiento de los datos JSON.</li>
+                <li><strong>Bootstrap:</strong> Framework CSS para un diseño rápido y responsivo.</li>
+            </ul>
+
+            <h3>Autor del Proyecto</h3>
+            <p>Mario Mancebo Romero</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/theme-switcher.js"></script>
+  </body>
+</html>

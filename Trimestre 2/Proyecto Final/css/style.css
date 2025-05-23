@@ -1,0 +1,55 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #343a40; /* Fondo oscuro de Bootstrap */
+    color: #f8f9fa; /* Texto claro */
+}
+
+body.dark-mode .navbar {
+    background-color: #212529 !important; /* Navbar aún más oscuro */
+}
+
+body.dark-mode .card {
+    background-color: #495057; /* Tarjetas oscuras */
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+body.dark-mode .card-header {
+    background-color: #3e444a;
+    border-color: #6c757d;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .alert {
+    background-color: #555c63;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #ced4da;
+}
+
+body.dark-mode .text-muted {
+    color: #ced4da !important;
+}
+
+/* Estilos para el texto de modo oscuro en el navbar */
+.navbar .form-check-label {
+    color: white; /* Asegura que el texto "Modo Oscuro" sea visible */
+}
+
+/* Ajustes para las imágenes de noticias y clima */
+.card-img-top {
+    object-fit: cover;
+    height: 180px; /* Altura fija para las imágenes de las tarjetas */
+    width: 100%;
+}
+
+.news-img {
+    height: 200px; /* Ajuste para las imágenes de noticias en el index */
+}
